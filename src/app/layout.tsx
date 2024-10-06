@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import "./../styles/global.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/globals.scss";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,12 +25,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
+      <head>
+        <title>Global Pay</title>
+        <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script defer src="bootstrap/bootstrap.min.js" />
       </body>
     </html>
   );
