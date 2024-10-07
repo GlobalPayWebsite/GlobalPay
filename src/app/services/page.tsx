@@ -15,14 +15,14 @@ export default function Home() {
                         <div className="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure maxime ab iste. Numquam molestiae sit atque tempora eius error excepturi sunt neque eum itaque!</div>
 
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-briefcase"></i> {/* Job Placement Assistance */}
                                     </div>
 
                                     <div className="service-body">
@@ -32,14 +32,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-graduation-cap"></i> {/* Support for Nepali Graduates */}
                                     </div>
 
                                     <div className="service-body">
@@ -49,14 +49,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-user-tie"></i> {/* Personalized Career Counseling */}
                                     </div>
 
                                     <div className="service-body">
@@ -66,14 +66,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-regular fa-handshake"></i> {/* Employer Partnerships */}
                                     </div>
 
                                     <div className="service-body">
@@ -94,14 +94,14 @@ export default function Home() {
                         <div className="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure maxime ab iste. Numquam molestiae sit atque tempora eius error excepturi sunt neque eum itaque!</div>
 
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-passport"></i> {/* Comprehensive Support for SSW */}
                                     </div>
 
                                     <div className="service-body">
@@ -111,14 +111,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-industry"></i> {/* Industry-Specific Expertise */}
                                     </div>
 
                                     <div className="service-body">
@@ -128,14 +128,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-clipboard-check"></i> {/* End-to-End Recruitment */}
                                     </div>
 
                                     <div className="service-body">
@@ -145,14 +145,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-home"></i> {/* Family Support for SSW (ii) */}
                                     </div>
 
                                     <div className="service-body">
@@ -172,14 +172,14 @@ export default function Home() {
                         <h3 className="section__title">Real Estate Consultant</h3>
                         <div className="section__subtitle">Our team is dedicated to helping you find the perfect rental property in Japan.</div>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-regular fa-building"></i> {/* Comprehensive Rental Assistance */}
                                     </div>
 
                                     <div className="service-body">
@@ -189,63 +189,36 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-file-contract"></i> {/* Lease Negotiation */}
                                     </div>
 
                                     <div className="service-body">
-                                        <h6 className='text-primary'>Multilingual Support:</h6>
-                                        <p className='text-secondary'>Our services are designed to cater to clients from all over the world. We offer multilingual support to ensure clear communication and a smooth rental process, regardless of your native language. Our team speaks English, Japanese, Nepali, Hindi, and several other languages to assist you better.</p>
+                                        <h6 className='text-primary'>Lease Negotiation and Paperwork Assistance:</h6>
+                                        <p className='text-secondary'>We handle the paperwork, ensuring all documents are completed correctly, and assist with lease negotiations to secure the best deal for our clients.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
                                 <div className="service-card">
                                     <div className="service-img">
                                         <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
                                     </div>
 
                                     <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
+                                        <i className="fa-solid fa-key"></i> {/* Move-In Assistance */}
                                     </div>
 
                                     <div className="service-body">
-                                        <h6 className='text-primary'>Expert Knowledge of the Japanese Market:</h6>
-                                        <p className='text-secondary'>With extensive experience and deep knowledge of the Japanese real estate market, we can provide valuable insights and advice. We help navigate the complexities of renting in Japan, from understanding local rental agreements to finding properties that meet your budget and lifestyle.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="educational-consultant">
-                <div className="container">
-                    <div className="section">
-                        <h3 className="section__title">Educational Consultant</h3>
-                        <div className="section__subtitle">Assist students for studying abroad from Japan to the USA, Australia, & Canada.</div>
-                        <div className="row">
-                            <div className="col-4">
-                                <div className="service-card">
-                                    <div className="service-img">
-                                        <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
-                                    </div>
-
-                                    <div className="service-icon">
-                                        <i className="fa-regular fa-envelope"></i>
-                                    </div>
-
-                                    <div className="service-body">
-                                        <h6 className='text-primary'>Personalized Guidance and Support:</h6>
-                                        <p className='text-secondary'>We support each student based on their academic goals, career aspirations, and personal preferences. Emphasize comprehensive services, from selecting the right universities and courses to assisting with application processes and visa requirements.</p>
+                                        <h6 className='text-primary'>Move-In Assistance:</h6>
+                                        <p className='text-secondary'>Our services don&apos;t stop when the lease is signed. We also provide move-in support, helping you settle into your new home with ease, from arranging utilities to offering guidance on the local area.</p>
                                     </div>
                                 </div>
                             </div>
@@ -254,14 +227,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="travel-consultant">
-                <div className="container">
-                    <div className="section">
-                        <h3 className="section__title">Travel Consultant</h3>
-                        <div className="section__subtitle">We sell airline tickets from Japan to any country, offering competitive pricing and exclusive deals to ensure our clients get the best value for travel.</div>
-                    </div>
-                </div>
-            </div>
             <Footer />
         </>
     );

@@ -12,16 +12,14 @@ export default function Home() {
     <>
       <Header />
       <div style={{ width: "100%", height: "60px" }}></div>
-      <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" className="scrollspy-example bg-body-tertiary rounded-2" tabIndex={0}>
-        <main>
-          <Carousel />
-          <AboutUs />
-          <Services />
-          <WhyUs />
-          <Team />
-          <Contact />
-        </main>
-      </div>
+      <main>
+        <Carousel />
+        <AboutUs />
+        <Services />
+        <WhyUs />
+        <Team />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

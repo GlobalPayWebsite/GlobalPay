@@ -1,6 +1,14 @@
+"use client"; // This line marks the component as a Client Component
+
 /* eslint-disable @next/next/no-img-element */
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const pathname = usePathname(); // This hook replaces useRouter for getting the current path
+
+  // Function to check if the current path matches the link path
+  const isActive = (path: string) => pathname === path;
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container">
@@ -25,22 +33,23 @@ const Header = () => {
           <div className="offcanvas-body" id="navbarSupportedContent">
             <ul className="navbar-nav justify-content-end flex-grow-1">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#home">Home</a>
+                <a className={`nav-link ${isActive('/') ? 'active' : ''}`} aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#about-us">About Us</a>
+                <a className={`nav-link ${isActive('/about-us') ? 'active' : ''}`} href="/about-us">About Us</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#services">Services</a>
+                <a className={`nav-link ${isActive('/services') ? 'active' : ''}`} href="/services">Services</a>
+              </li>
+              {/* Uncomment when needed
+              <li className="nav-item">
+                <a className={`nav-link ${isActive('/why-us') ? 'active' : ''}`} href="/why-us">Why Us</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#why-us">Why Us</a>
-              </li>
+                <a className={`nav-link ${isActive('/team') ? 'active' : ''}`} href="/team">Team</a>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="/#team">Team</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/#contact">Contact</a>
+                <a className={`nav-link ${isActive('/contact') ? 'active' : ''}`} href="/contact">Contact</a>
               </li>
             </ul>
           </div>

@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// components/AboutUs.tsx
 const AboutUs = () => {
   return (
     <div id="about-us">
@@ -9,10 +8,10 @@ const AboutUs = () => {
           <p className="section__subtitle">We provide expert consulting services in Recruitment, SSW visas, Real Estate, Education, and Travel, ensuring personalized support and guidance for all our clients.</p>
 
           <div className="row align-items-center">
-            <div className="col-6 splash">
+            <div className="col-md-12 col-xl-6 splash">
               <img src="assets/cover.jpg" alt="Cover" width="100%" className="img-thumbnail" />
             </div>
-            <div className="col-6">
+            <div className="col-md-12 col-xl-6 ">
               <div className="row about__container">
                 <div className="col-6">
                   <div className="about__item">

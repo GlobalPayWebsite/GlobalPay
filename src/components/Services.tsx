@@ -8,7 +8,7 @@ const Services = () => {
           <p className="section__subtitle">We provide a range of expert services tailored to support your career and life abroad, including job placements, SSW visa assistance, and much more.</p>
 
           <div className="row service-container">
-            <div className="col-6">
+            <div className="col-md-12 col-lg-6">
               <div className="row">
                 <div className="col-12">
                   <div className="service-item">
@@ -59,7 +59,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-md-12 col-lg-6">
               <div className="row">
                 <div className="col-12">
                   <div className="service-item">

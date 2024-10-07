@@ -9,7 +9,7 @@ const WhyUs = () => {
           <p className="section__subtitle">We offer exceptional services and personalized support, guiding you every step of the way.</p>
 
           <div className="row">
-            <div className="col-7">
+            <div className="col-sm-12 col-lg-7 order-md-1 order-lg-0">
               <div className="row">
                 <div className="col-12">
                   <div className="why-us-item d-flex">
@@ -61,7 +61,7 @@ const WhyUs = () => {
               </div>
             </div>
 
-            <div className="col-5 splash">
+            <div className="col-sm-12 col-lg-5 splash order-md-0 order-lg-1">
               <img className="img-thumbnail" src="/resource/cover.jpg" alt="Why Us" width="100%" />
             </div>
           </div>
