@@ -70,6 +70,42 @@ export default function Home() {
                 </div>
             </div>
 
+            <div id="educational-consultant">
+                <div className="container">
+                    <div className="section">
+                        <h3 className="section__title">Educational Consultant</h3>
+                        <div className="section__subtitle">Assist students for studying abroad from Japan to the USA, Australia, & Canada.</div>
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 col-sm-12">
+                                <div className="service-card">
+                                    <div className="service-img">
+                                        <img src="/resource/cover.jpg" alt="Business Planning" width="100%" />
+                                    </div>
+
+                                    <div className="service-icon">
+                                        <i className="fa-regular fa-envelope"></i>
+                                    </div>
+
+                                    <div className="service-body">
+                                        <h6 className='text-primary'>Personalized Guidance and Support:</h6>
+                                        <p className='text-secondary'>We support each student based on their academic goals, career aspirations, and personal preferences. Emphasize comprehensive services, from selecting the right universities and courses to assisting with application processes and visa requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="travel-consultant">
+                <div className="container">
+                    <div className="section">
+                        <h3 className="section__title">Travel Consultant</h3>
+                        <div className="section__subtitle">We sell airline tickets from Japan to any country, offering competitive pricing and exclusive deals to ensure our clients get the best value for travel.</div>
+                    </div>
+                </div>
+            </div>
+
             <Footer />
         </>
     );
