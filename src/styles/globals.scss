@@ -46,6 +46,11 @@
       font-size: 56px;
     }
 
+    h1,
+    p {
+      max-width: 720px;
+    }
+
     .btn,
     .btn:hover,
     .btn:active {

@@ -38,8 +38,14 @@ const Header = () => {
               <li className="nav-item">
                 <a className={`nav-link ${isActive('/about-us') ? 'active' : ''}`} href="/about-us">About Us</a>
               </li>
-              <li className="nav-item">
-                <a className={`nav-link ${isActive('/services') ? 'active' : ''}`} href="/services">Services</a>
+              <li className="nav-item dropdown">
+                <a className={`nav-link dropdown-toggle ${pathname.includes('/services') ? 'active' : ''}`} href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="/services/recruitment">Recruitment</a></li>
+                  <li><a className="dropdown-item" href="/services/others">Other Services</a></li>
+                </ul>
               </li>
               {/* Uncomment when needed
               <li className="nav-item">

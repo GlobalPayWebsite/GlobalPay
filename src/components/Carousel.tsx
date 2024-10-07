@@ -12,16 +12,14 @@ const Carousel = () => {
           <div className="img-container"><img src="/assets/cover.jpg" className="d-block w-100" style={{ height: 420, objectFit: "cover" }} alt="..." /></div>
           <div className="carousel-caption d-md-block">
             <div className="container">
-              <div className="w-75">
-                <h1>Your Global <br />Partner</h1>
-                <p>
-                  At Global Pay, we offer seamless solutions across recruitment, real estate, and educational consulting.
-                  Let us help you navigate your journey to success with tailored services for your needs.
-                </p>
-                <a className="btn btn-primary m-auto" href="/services">
-                  Explore Our Services
-                </a>
-              </div>
+              <h1>Your Global <br />Partner</h1>
+              <p>
+                At Global Pay, we offer seamless solutions across recruitment, real estate, and educational consulting.
+                Let us help you navigate your journey to success with tailored services for your needs.
+              </p>
+              <a className="btn btn-primary m-auto" href="/services">
+                Explore Our Services
+              </a>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/globals.scss";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -36,7 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <script defer src="bootstrap/bootstrap.min.js" />
+        <script defer src="/bootstrap/bootstrap.bundle.min.js" />
       </body>
     </html>
   );
