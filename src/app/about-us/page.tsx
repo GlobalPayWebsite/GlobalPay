@@ -1,18 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
 import AboutUs from '@/components/AboutUs';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Spacing from '@/components/Spacing';
 
-export default function Home() {
+
+export default function AboutUsPage() {
     return (
         <>
             <Header />
-            {/* Spacing... */}
-            <div style={{ width: "100%", height: "60px" }}></div>
-
-
+            <Spacing height="60px" />
             <AboutUs />
-
             <Footer />
         </>
     );

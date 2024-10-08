@@ -1,20 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/globals.scss";
-
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,7 +21,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         {children}
         <script defer src="/bootstrap/bootstrap.bundle.min.js" />
