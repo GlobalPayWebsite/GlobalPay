@@ -9,6 +9,15 @@ export default function Home() {
             {/* Spacing... */}
             <div style={{ width: "100%", height: "60px" }}></div>
 
+            <div className="page__header">
+                <div className="container">
+                    <h1>Our Services</h1>
+                    <div className="breadcrumb">
+                        <h6><a href="/">Home</a><span>/</span><a href="/services/others">Services</a> <span>/</span><a href="/services/others">Others</a></h6>
+                    </div>
+                </div>
+            </div>
+
             <div id="real-estate">
                 <div className="container">
                     <div className="section">

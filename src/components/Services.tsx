@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+
 const Services = () => {
   return (
     <div id="services">
@@ -112,7 +113,7 @@ const Services = () => {
           </div>
 
           <div className="d-flex mt-4">
-            <a className="btn btn-primary m-auto" href="/services">
+            <a className="btn btn-primary m-auto" href="/services/recruitment">
               Read More
             </a>
           </div>

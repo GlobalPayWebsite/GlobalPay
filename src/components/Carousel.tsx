@@ -17,7 +17,7 @@ const Carousel = () => {
                 At Global Pay, we offer seamless solutions across recruitment, real estate, and educational consulting.
                 Let us help you navigate your journey to success with tailored services for your needs.
               </p>
-              <a className="btn btn-primary m-auto" href="/services">
+              <a className="btn btn-primary m-auto" href="/services/recruitment">
                 Explore Our Services
               </a>
             </div>

@@ -8,6 +8,16 @@ export default function Home() {
             <Header />
             {/* Spacing... */}
             <div style={{ width: "100%", height: "60px" }}></div>
+
+            <div className="page__header">
+                <div className="container">
+                    <h1>Our Services</h1>
+                    <div className="breadcrumb">
+                        <h6><a href="/">Home</a><span>/</span><a href="/services/recruitment">Services</a> <span>/</span><a href="/services/recruitment">Recruitment</a></h6>
+                    </div>
+                </div>
+            </div>
+
             <div id="recruitment">
                 <div className="container">
                     <div className="section">

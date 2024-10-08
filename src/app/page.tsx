@@ -18,7 +18,7 @@ export default function Home() {
         <Services />
         <WhyUs />
         <Team />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>
