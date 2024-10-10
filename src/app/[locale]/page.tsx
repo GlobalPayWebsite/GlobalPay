@@ -1,4 +1,5 @@
 import AboutUs from '@/components/AboutUs';
+import Blogs from '@/components/Blogs';
 import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -18,6 +19,7 @@ export default function Home() {
         <Services />
         <WhyUs />
         <Team />
+        <Blogs />
       </main>
       <Footer />
     </>

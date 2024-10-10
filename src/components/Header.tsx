@@ -10,7 +10,6 @@ const Header = () => {
   const locale = useLocale();
 
   const isActive = (path: string) => {
-    // Normalize paths by removing trailing slashes
     const normalizedPathname = pathname.endsWith('/')
       ? pathname.slice(0, -1)
       : pathname;
@@ -19,9 +18,6 @@ const Header = () => {
     console.log(normalizedPathname, normalizedPath);
     return normalizedPathname === normalizedPath;
   };
-
-  // Usage example
-  // const activeClass = isActive('/en') ? 'active' : '';
 
   const router = useRouter();
 

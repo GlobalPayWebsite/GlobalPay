@@ -6,7 +6,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 pb-4 pb-lg-0">
+          <div className="col-lg-3 pb-4 pb-lg-0">
             <Link className="navbar-brand mb-2 d-inline-block" href="/#home">
               <img
                 src="/assets/logo.png"
@@ -32,11 +32,71 @@ const Footer = () => {
             </em>
 
             <p>
-              <strong>Mobile: </strong> 03-6687-7736
+              <strong>
+                <i className="text-primary fa-solid fa-phone pe-1" />{' '}
+              </strong>{' '}
+              03-6687-7736
               <br />
-              <strong>Email: </strong>info@globalpay.co.jp
+              <strong>
+                <i className="text-primary fa-solid fa-envelope pe-1" />{' '}
+              </strong>
+              info@globalpay.co.jp
               <br />
             </p>
+          </div>
+
+          <div className="col-lg-3 pb-2 pb-lg-0 footer__useful-links">
+            <h5 className="fw-semibold">Useful Links</h5>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about-us">About us</Link>
+              </li>
+              <li>
+                <Link href="/services/recruitment">Recruitment Service</Link>
+              </li>
+              <li>
+                <Link href="/services/others">Other Service</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-lg-3 footer__useful-links  pb-2 pb-lg-0 ">
+            <h5 className="fw-semibold">Our Services</h5>
+            <ul>
+              <li>
+                <Link href="/services/recruitment">Recruitment</Link>
+              </li>
+              <li>
+                <Link href="/services/recruitment">SSW</Link>
+              </li>
+              <li>
+                <Link href="/services/others">Real Estate Consultant</Link>
+              </li>
+              <li>
+                <Link href="/services/others">Educational Consultant</Link>
+              </li>
+              <li>
+                <Link href="/services/others">Travel Consultant</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-lg-3 footer__useful-links  pb-4 pb-lg-0 ">
+            <h5 className="fw-semibold">Legals</h5>
+            <ul>
+              <li>
+                <Link href="/blog/privacy-policy">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="/blog/disclaimer">Disclaimer</Link>
+              </li>
+            </ul>
 
             <div>
               <Link
@@ -63,48 +123,6 @@ const Footer = () => {
                 <i className="fa-brands fa-twitter"></i>
               </Link>
             </div>
-          </div>
-
-          <div className="col-lg-4 pb-2 pb-lg-0 footer__useful-links">
-            <h5>Useful Links</h5>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about-us">About us</Link>
-              </li>
-              <li>
-                <Link href="/services/recruitment">Recruitment Service</Link>
-              </li>
-              <li>
-                <Link href="/services/others">Other Service</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-lg-4 footer__useful-links">
-            <h5>Our Services</h5>
-            <ul>
-              <li>
-                <Link href="/services/recruitment">Recruitment</Link>
-              </li>
-              <li>
-                <Link href="/services/recruitment">SSW</Link>
-              </li>
-              <li>
-                <Link href="/services/others">Real Estate Consultant</Link>
-              </li>
-              <li>
-                <Link href="/services/others">Educational Consultant</Link>
-              </li>
-              <li>
-                <Link href="/services/others">Travel Consultant</Link>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
