@@ -9,8 +9,20 @@ const Header = () => {
   const params = useParams();
   const locale = useLocale();
 
-  const isActive = (path: string) =>
-    typeof pathname === 'string' && pathname === path;
+  const isActive = (path: string) => {
+    // Normalize paths by removing trailing slashes
+    const normalizedPathname = pathname.endsWith('/')
+      ? pathname.slice(0, -1)
+      : pathname;
+    const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path;
+
+    console.log(normalizedPathname, normalizedPath);
+    return normalizedPathname === normalizedPath;
+  };
+
+  // Usage example
+  // const activeClass = isActive('/en') ? 'active' : '';
+
   const router = useRouter();
 
   const t = useTranslations('Navigation');
@@ -19,21 +31,8 @@ const Header = () => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     const nextLocale = event.target.value as Locale;
-
-    console.log(pathname, params, nextLocale);
-
     const newString = pathname.replace(params.locale as string, nextLocale);
-    console.log(newString);
-
     router.replace(newString);
-
-    // router.replace(
-    //   // @ts-expect-error -- TypeScript will validate that only known `params`
-    //   // are used in combination with a given `pathname`. Since the two will
-    //   // always match for the current route, we can skip runtime checks.
-    //   { pathname, params },
-    //   { locale: nextLocale }
-    // );
   };
 
   return (
@@ -91,7 +90,7 @@ const Header = () => {
             <ul className="navbar-nav justify-content-end flex-grow-1">
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${isActive('/') ? 'active' : ''}`}
+                  className={`nav-link ${isActive(`/${locale}/`) ? 'active' : ''}`}
                   aria-current="page"
                   href="/"
                 >
@@ -100,7 +99,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${isActive('/about-us') ? 'active' : ''}`}
+                  className={`nav-link ${isActive(`/${locale}/about-us`) ? 'active' : ''}`}
                   href="/about-us"
                 >
                   {t('aboutUs')}
@@ -134,7 +133,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+                  className={`nav-link ${isActive(`/${locale}/contact`) ? 'active' : ''}`}
                   href="/contact"
                 >
                   {t('contact')}
