@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing';
 import React from 'react';
 
 interface Breadcrumb {
@@ -19,7 +20,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, breadcrumbs }) => {
           <h6>
             {breadcrumbs.map((breadcrumb, index) => (
               <React.Fragment key={index}>
-                <a href={breadcrumb.href}>{breadcrumb.label}</a>
+                <Link href={breadcrumb.href}>{breadcrumb.label}</Link>
                 {index < breadcrumbs.length - 1 && <span>/</span>}
               </React.Fragment>
             ))}

@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "日本語のこんにちは！",
+    "about": "アバウトページに移動"
+  },
+  "Navigation": {
+    "home": "ホーム",
+    "aboutUs": "私たちに関しては",
+    "services": "サービス",
+    "contact": "連絡先"
+  }
+}

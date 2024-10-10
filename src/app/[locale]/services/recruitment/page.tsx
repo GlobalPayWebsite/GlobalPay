@@ -47,8 +47,8 @@ const Home: FC = () => {
         title="Our Services"
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Services', href: '/services/others' },
-          { label: 'Others', href: '/services/others' },
+          { label: 'Services', href: '/services/recruitment' },
+          { label: 'Recruitment', href: '/services/recruitment' },
         ]}
       />
 
