@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.scss';
 
 export default function RootLayout({

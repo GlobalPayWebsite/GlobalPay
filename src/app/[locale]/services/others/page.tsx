@@ -11,6 +11,7 @@ interface Service {
   iconClass: string;
   serviceTitle: string;
   description: string;
+  slug?: string;
 }
 
 interface ServiceCategory {
@@ -64,6 +65,7 @@ const Home: FC = () => {
                     iconClass={service.iconClass}
                     title={service.serviceTitle}
                     description={service.description}
+                    slug={service.slug}
                   />
                 ))}
               </div>

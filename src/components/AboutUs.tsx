@@ -33,7 +33,7 @@ const AboutUs = () => {
                           height="32px"
                         />
                       </div>
-                      <h5 className="text-primary">Recruitment</h5>
+                      <h5 className="fw-semibold text-primary">Recruitment</h5>
                       <p>
                         Helping individuals secure jobs under the SSW program
                         and beyond.
@@ -51,7 +51,7 @@ const AboutUs = () => {
                           height="32px"
                         />
                       </div>
-                      <h5 className="text-primary">SSW</h5>
+                      <h5 className="fw-semibold text-primary">SSW</h5>
                       <p>
                         Assisting with the SSW visa process to work in Japan.
                       </p>
@@ -68,7 +68,7 @@ const AboutUs = () => {
                           height="32px"
                         />
                       </div>
-                      <h5 className="text-primary">Real Estate</h5>
+                      <h5 className="fw-semibold text-primary">Real Estate</h5>
                       <p>
                         Providing rental assistance with multilingual support in
                         Japan.
@@ -86,7 +86,7 @@ const AboutUs = () => {
                           height="32px"
                         />
                       </div>
-                      <h5 className="text-primary">Education</h5>
+                      <h5 className="fw-semibold text-primary">Education</h5>
                       <p>
                         Guiding students for abroad study to the USA, Australia,
                         and Canada.

@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+@import '~bootstrap/scss/functions';
 
-/* Carousel Caption */
-.text-primary {
-  color: #c2282c !important;
+$primary: #c2282c;
+$link-color: #c2282c; // Set link color to primary color
+$link-hover-color: darken(
+  $link-color,
+  15%
+); // Set hover color to a darker shade of the primary color
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .carousel-item {
@@ -137,8 +147,8 @@
           padding: 8px;
 
           img {
-            width: 32px;
-            height: 32px;
+            width: 36px;
+            height: 36px;
           }
         }
         // background: rgba(0, 0, 0, 0.025);

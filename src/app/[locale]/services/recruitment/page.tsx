@@ -12,6 +12,7 @@ interface Service {
   iconClass: string;
   title: string;
   description: string;
+  slug?: string;
 }
 
 interface Section {
@@ -66,6 +67,7 @@ const Home: FC = () => {
                     iconClass={service.iconClass}
                     title={service.title}
                     description={service.description}
+                    slug={service.slug}
                   />
                 ))}
               </div>

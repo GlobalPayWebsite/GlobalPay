@@ -23,7 +23,9 @@ const Services = () => {
                       <i className="fa-solid fa-briefcase"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">Job Placement Assistance</h5>
+                      <h5 className="fw-semibold text-primary">
+                        Job Placement Assistance
+                      </h5>
                       <p>
                         Helping individuals find the right job opportunities
                         under the SSW program.
@@ -37,7 +39,7 @@ const Services = () => {
                       <i className="fa-solid fa-user-graduate"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         Support for Nepali Graduates
                       </h5>
                       <p>
@@ -54,7 +56,7 @@ const Services = () => {
                       <i className="fa-solid fa-chalkboard-teacher"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         Personalized Career Counseling
                       </h5>
                       <p>
@@ -71,7 +73,9 @@ const Services = () => {
                       <i className="fa-solid fa-handshake"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">Employer Partnerships</h5>
+                      <h5 className="fw-semibold text-primary">
+                        Employer Partnerships
+                      </h5>
                       <p>
                         We partner with employers to match candidates with
                         suitable roles.
@@ -90,7 +94,7 @@ const Services = () => {
                       <i className="fa-solid fa-passport"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         Comprehensive Support for SSW (i) and SSW (ii)
                       </h5>
                       <p>
@@ -106,7 +110,7 @@ const Services = () => {
                       <i className="fa-solid fa-industry"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         Industry-Specific Expertise
                       </h5>
                       <p>
@@ -123,7 +127,7 @@ const Services = () => {
                       <i className="fa-solid fa-users"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         End-to-End Recruitment Services
                       </h5>
                       <p>
@@ -140,7 +144,7 @@ const Services = () => {
                       <i className="fa-solid fa-home"></i>
                     </div>
                     <div>
-                      <h5 className="text-primary">
+                      <h5 className="fw-semibold text-primary">
                         Family Support for SSW (ii) Holders
                       </h5>
                       <p>

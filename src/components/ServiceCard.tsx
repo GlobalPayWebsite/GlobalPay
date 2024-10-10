@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { FC } from 'react';
 
@@ -6,6 +7,7 @@ interface ServiceCardProps {
   iconClass: string;
   title: string;
   description: string;
+  slug?: string;
 }
 
 const ServiceCard: FC<ServiceCardProps> = ({
@@ -13,6 +15,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
   iconClass,
   title,
   description,
+  slug,
 }) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-12">
@@ -32,11 +35,13 @@ const ServiceCard: FC<ServiceCardProps> = ({
         </div>
 
         <div className="service-body">
-          <h6 className="text-primary">{title}</h6>
+          <h6 className="fw-semibold text-primary">{title}</h6>
           <p className="text-secondary">{description}</p>
-          <a href="#" className="service__link">
-            Learn more <i className="fa-solid fa-arrow-right-long"></i>
-          </a>
+          {slug && (
+            <Link href={`/blog/${slug}`} className="service__link">
+              Learn more <i className="fa-solid fa-arrow-right-long"></i>
+            </Link>
+          )}
         </div>
       </div>
     </div>
