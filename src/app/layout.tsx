@@ -12,7 +12,10 @@ export default function RootLayout({
         <title>Global Pay</title>
         <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
       </head>
-      <body className={`antialiased`}>
+      <body
+        className={`antialiased`}
+        style={{ overflow: 'visible !important' }}
+      >
         {children}
         <script defer src="/bootstrap/bootstrap.bundle.min.js" />
       </body>

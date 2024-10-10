@@ -15,7 +15,6 @@ const Header = () => {
       : pathname;
     const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path;
 
-    console.log(normalizedPathname, normalizedPath);
     return normalizedPathname === normalizedPath;
   };
 
@@ -26,9 +25,26 @@ const Header = () => {
   const handleChangeLanguage = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    const nextLocale = event.target.value as Locale;
+    const target = event.target;
+    const nextLocale = target.value as Locale;
     const newString = pathname.replace(params.locale as string, nextLocale);
     router.replace(newString);
+
+    // Dismiss the offcanvas programmatically after the option is selected
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    if (offcanvasElement) {
+      // @ts-expect-error it will be there
+      const bootstrap = window.bootstrap;
+      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if (offcanvas) {
+        offcanvas.hide(); // Dismiss the offcanvas
+      }
+    }
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const target = e.currentTarget as HTMLElement;
+    router.push(target.getAttribute('href') as string);
   };
 
   return (
@@ -89,6 +105,8 @@ const Header = () => {
                   className={`nav-link ${isActive(`/${locale}/`) ? 'active' : ''}`}
                   aria-current="page"
                   href="/"
+                  onClick={handleLinkClick}
+                  data-bs-dismiss="offcanvas"
                 >
                   {t('home')}
                 </Link>
@@ -97,6 +115,8 @@ const Header = () => {
                 <Link
                   className={`nav-link ${isActive(`/${locale}/about-us`) ? 'active' : ''}`}
                   href="/about-us"
+                  onClick={handleLinkClick}
+                  data-bs-dismiss="offcanvas"
                 >
                   {t('aboutUs')}
                 </Link>
@@ -116,12 +136,19 @@ const Header = () => {
                     <Link
                       className="dropdown-item"
                       href="/services/recruitment"
+                      onClick={handleLinkClick}
+                      data-bs-dismiss="offcanvas"
                     >
                       Recruitment
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="/services/others">
+                    <Link
+                      className="dropdown-item"
+                      href="/services/others"
+                      onClick={handleLinkClick}
+                      data-bs-dismiss="offcanvas"
+                    >
                       Other Services
                     </Link>
                   </li>
@@ -131,6 +158,8 @@ const Header = () => {
                 <Link
                   className={`nav-link ${isActive(`/${locale}/contact`) ? 'active' : ''}`}
                   href="/contact"
+                  onClick={handleLinkClick}
+                  data-bs-dismiss="offcanvas"
                 >
                   {t('contact')}
                 </Link>
